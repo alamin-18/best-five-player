@@ -1,6 +1,7 @@
 document.getElementById("calulate").addEventListener("click",function(){
     const playerInput = document.getElementById("player-price").value;
     const playerValue = parseInt(playerInput);
+
     const playerPrice = playerValue *5
     const playerCostInner = document.getElementById('player-cost');
     playerCostInner.innerText = playerPrice;
@@ -16,10 +17,13 @@ document.getElementById("total-btn").addEventListener("click",function(){
 
     const playerCostInner = document.getElementById('player-cost').innerText;
     const playerCost = parseInt(playerCostInner);
+    
 
-    const totalCost = manegerValue + coachValue + playerCost;
+    
+        const totalCost = manegerValue + coachValue + playerCost;
     const total = document.getElementById('total-cost');
-    total.innerText = totalCost; 
+    total.innerText = totalCost;
+
 })
 
 lem_output = document.getElementById("player-add"); 
