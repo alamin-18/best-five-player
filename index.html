@@ -28,7 +28,7 @@
                     <div class="p-6 text-center  flex-row " >
                     <h1 class="text-xl font-extrabold">Neymar Jr</h1>
                     <small>36 Goals . 120 Assist</small><br>
-                    <button class="px-16 mt-2 bg-lime-400">SELECT</button>
+                    <button id="neymar" class="px-16 mt-2 bg-[#015196]">SELECT</button>
                     </div>
                 </div>
                 <div class="bg-black ">
@@ -36,7 +36,7 @@
                     <div class="p-6 text-center  flex-row " >
                     <h1 class="text-xl font-extrabold">Kylian Mbappé</h1>
                     <small>36 Goals . 120 Assist</small><br>
-                    <button class="px-16 mt-2 bg-lime-400">SELECT</button>
+                    <button id="mbappe" class="px-16 mt-2 bg-[#015196]">SELECT</button>
                     </div>
                 </div>
                 <div class="bg-black ">
@@ -44,7 +44,7 @@
                     <div class="p-6 text-center  flex-row " >
                     <h1 class="text-xl font-extrabold">Vítor Machado</h1>
                     <small>36 Goals . 120 Assist</small><br>
-                    <button class="px-16 mt-2 bg-lime-400">SELECT</button>
+                    <button id="marchado" class="px-16 mt-2 bg-[#015196]">SELECT</button>
                     </div>
                 </div>
                 <div class="bg-black ">
@@ -52,7 +52,7 @@
                     <div class="p-6 text-center  flex-row " >
                     <h1 class="text-xl font-extrabold">Sergio Ramos</h1>
                     <small>36 Goals . 120 Assist</small><br>
-                    <button class="px-16 mt-2 bg-lime-400">SELECT</button>
+                    <button id="ramos" class="px-16 mt-2 bg-[#015196]">SELECT</button>
                     </div>
                 </div>
                 <div class="bg-black ">
@@ -60,7 +60,7 @@
                     <div class="p-6 text-center  flex-row " >
                     <h1 class="text-xl font-extrabold">Renato Sanches</h1>
                     <small>36 Goals . 120 Assist</small><br>
-                    <button class="px-16 mt-2 bg-lime-400">SELECT</button>
+                    <button id="sanches" class="px-16 mt-2 bg-[#015196]">SELECT</button>
                     </div>
                 </div>
                 <div class="bg-black ">
@@ -68,31 +68,31 @@
                     <div class="p-6 text-center  flex-row " >
                     <h1 class="text-xl font-extrabold">Lionel Messi</h1>
                     <small>36 Goals . 120 Assist</small><br>
-                    <button class="px-16 mt-2 bg-lime-400">SELECT</button>
+                    <button id="messi" class="px-16 mt-2 bg-[#015196]">SELECT</button>
                     </div>
                 </div>
                 <div class="bg-black ">
-                    <img src="images/card-6.png" alt="">
+                    <img src="images/toni.jpg" alt="">
                     <div class="p-6 text-center  flex-row " >
-                    <h1 class="text-xl font-extrabold">Lionel Messi</h1>
+                    <h1 class="text-xl font-extrabold">Toni Kroos</h1>
                     <small>36 Goals . 120 Assist</small><br>
-                    <button class="px-16 mt-2 bg-lime-400">SELECT</button>
+                    <button id="kroos" class="px-16 mt-2 bg-[#015196]">SELECT</button>
                     </div>
                 </div>
                 <div class="bg-black ">
-                    <img src="images/card-6.png" alt="">
+                    <img src="images/di-maria.jpg" alt="">
                     <div class="p-6 text-center  flex-row " >
-                    <h1 class="text-xl font-extrabold">Lionel Messi</h1>
+                    <h1 class="text-xl font-extrabold">Di Maria</h1>
                     <small>36 Goals . 120 Assist</small><br>
-                    <button class="px-16 mt-2 bg-lime-400">SELECT</button>
+                    <button id="maria" class="px-16 mt-2 bg-[#015196]">SELECT</button>
                     </div>
                 </div>
                 <div class="bg-black ">
-                    <img src="images/card-6.png" alt="">
+                    <img src="images/Salah.jpg" alt="">
                     <div class="p-6 text-center  flex-row " >
-                    <h1 class="text-xl font-extrabold">Lionel Messi</h1>
+                    <h1 class="text-xl font-extrabold">M Salah</h1>
                     <small>36 Goals . 120 Assist</small><br>
-                    <button class="px-16 mt-2 bg-lime-400">SELECT</button>
+                    <button id="salah" class="px-16 mt-2 bg-[#015196]">SELECT</button>
                     </div>
                 </div>
                 
@@ -100,10 +100,8 @@
             <div class="">
                 <div class="bg-black h-80 p-8" >
                     <h1 class="text-2xl font-semibold mb-4">Selected-Player</h1>
-                    <ol class="list-decimal text-xl" role="list">
-                        <li>alamin</li>
-                        <li>alamin</li>
-                        <li>alamin</li>
+                    <ol id="player-add" class="list-decimal text-xl" role="list">
+                        
                     </ol>
                 </div>
                 <div class="bg-black mt-6 p-8 flex flex-col gap-4">
@@ -112,7 +110,7 @@
                     </div>
                     <div class="flex justify-between items-center">
                     <p>Per Player</p>
-                    <input class="w-16 py-1 bg-black border-2" type="text">
+                    <input class="w-2/4 py-1 bg-black border-2" type="text">
                     </div>
                     <button class="bg-[#015196] px-12 py-1 font-semibold text-lg" >Calculate</button>
                     <div class="flex justify-around">
@@ -121,11 +119,11 @@
                     </div>
                     <div class="flex justify-between items-center">
                     <p>Manager</p>
-                    <input class="w-16 py-1 bg-black border-2" type="text">
+                    <input class="w-2/4 py-1 bg-black border-2" type="text">
                     </div>
                     <div class="flex justify-between items-center">
                         <p>Coach</p>
-                    <input class="w-16 py-1 block bg-black border-2" type="text">
+                    <input class="w-2/4 py-1 block bg-black border-2" type="text">
                     </div>
                     <button class="bg-[#015196] px-7 py-1 font-semibold text-lg" >Calculate total</button>
                     
@@ -138,5 +136,6 @@
             
         </section>
     </main>
+    <script src="js/app.js"></script>
 </body>
 </html>
