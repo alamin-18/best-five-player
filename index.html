@@ -21,8 +21,8 @@
         </div>
     </header>
     <main class="bg-[#0D0D0D] w-9/12 mx-auto h-auto text-white">
-        <section class=" mt-12 grid grid-cols-2 p-10 gap-6">
-            <div class="grid grid-cols-3 gap-5">
+        <section class="  grid grid-cols-4 p-48 gap-6">
+            <div class="grid grid-cols-3 gap-5 col-span-3">
                 <div class="bg-black ">
                     <img src="images/card-1.png" alt="">
                     <div class="p-6 text-center  flex-row " >
@@ -73,16 +73,41 @@
                 </div>
                 
             </div>
-            <div>
-                <div>
-                    <h1>Selected - V</h1>
-                    <ol class="list-decimal" role="list">
+            <div class="">
+                <div class="bg-black h-80 p-8" >
+                    <h1 class="text-2xl font-semibold mb-4">Selected-Player</h1>
+                    <ol class="list-decimal text-xl" role="list">
                         <li>alamin</li>
                         <li>alamin</li>
                         <li>alamin</li>
                     </ol>
                 </div>
+                <div class="bg-black mt-6 p-8">
+                    <div >
+                        <h1 class="text-2xl font-semibold text-center">Budget</h1>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <p>Per Player</p>
+                    <input class="w-16 py-1 bg-black border-2" type="text">
+                    </div>
+                    <button class="bg-[#015196] px-12 py-1 font-semibold text-lg" >Calculate</button>
+                    <div class="flex justify-around">
+                        <h1>Player Expenses</h1>
+                        <h1>$<span></span></h1>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <p>Manager</p>
+                    <input class="w-16 py-1 bg-black border-2" type="text">
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <p>Coach</p>
+                    <input class="w-16 py-1 block bg-black border-2" type="text">
+                    </div>
+                    <button class="bg-[#015196] px-7 py-1 font-semibold text-lg" >Calculate total</button>
+
+                </div>
             </div>
+            
         </section>
     </main>
 </body>
