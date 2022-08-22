@@ -26,6 +26,43 @@ document.getElementById("total-btn").addEventListener("click",function(){
 
 })
 
-lem_output = document.getElementById("player-add"); 
-lem_output.innerHtml
 
+// player function
+
+function playerAdd(playerName,btnId){
+    const playerNameInner = document.getElementById(playerName).innerText;
+    
+    let addedName = document.getElementById("player-add");
+    
+    let areey = 0;
+    console.log(areey);
+    const totalPlayerSselect = addedName.childElementCount;
+    if(totalPlayerSselect > 4){
+        
+        alert('5 tar besi add korte parba na')
+    }
+    else{
+        
+    const li = document.createElement("li");
+    li.innerText = playerNameInner;
+    addedName.appendChild(li);
+
+    // const btnDisable = getElementById(btnId);
+    // btnDisable.style.backgroundColor = "gey";
+    // btnDisable.setAttribute("disabled",'');
+    };
+
+    
+    
+
+    // const addedNameHtml = addedName.innerHTML;
+    
+    // const a= document.getElementsByTagName();
+    // console.log(a);
+
+};
+
+// function disable(){
+//     disable = true;
+
+// }
