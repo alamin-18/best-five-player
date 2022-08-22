@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!-- header aria start -->
     <header class=" bg-black heder-hight w-9/12 mx-auto flex justify-between items-center ">
         <div class=""><img class="" src="images/Group-12.png" alt=""></div>
         <div class="text-center w-2/4 ">
@@ -20,9 +21,14 @@
             <img src="images/soccer-goal.png" alt="">
         </div>
     </header>
+    <!-- header aria ends -->
+    <!-- main aria start -->
     <main class="bg-[#0D0D0D] w-9/12 mx-auto h-auto text-white">
+        <!-- sectin divide -->
         <section class="  grid grid-cols-4 p-48 gap-6">
+            <!-- left section start -->
             <div class="grid grid-cols-3 gap-5 col-span-3">
+                <!-- card start -->
                 <div class="bg-black player ">
                     <img src="images/card-1.png" alt="">
                     <div class="p-6 text-center  flex-row " >
@@ -95,15 +101,20 @@
                     <button  id="salah" class="px-16 mt-2 bg-[#015196] btn-disable">SELECT</button>
                     </div>
                 </div>
-                
+                <!-- card ends -->
             </div>
-            <div class="">
+            <!-- left section ends -->
+            <!-- right section start -->
+            <div>
+                <!-- selected player -->
                 <div class="bg-black h-80 p-8" >
                     <h1 class="text-2xl font-semibold mb-4">Selected-Player</h1>
                     <ol id="player-add" class="list-decimal text-xl select" role="list">
                         
                     </ol>
                 </div>
+                <!-- selected player end -->
+                <!-- calculation -->
                 <div class="bg-black mt-6 p-8 flex flex-col gap-4">
                     <div >
                         <h1 class="text-2xl font-semibold text-center">Budget</h1>
@@ -132,10 +143,14 @@
                         <h1>$<span id="total-cost"></span></h1>
                     </div>
                 </div>
+                <!-- calculation ends -->
             </div>
-            
+            <!-- right section ends -->
         </section>
     </main>
+    <hr class="w-9/12 mx-auto">
+    <footer class="h-16 bg-black text-white w-9/12 mx-auto flex items-center justify-center"><p class="text-center">Copyright @ 2022 All Rights Reserved.</p></footer>
+    <!-- javaScript added -->
     <script src="js/common.js"></script>
     <script src="js/app.js"></script>
 </body>

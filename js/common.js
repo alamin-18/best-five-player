@@ -1,11 +1,49 @@
-document.getElementById("calulate").addEventListener("click",function(){
+// player add function
+let playerCount =0;
+let arr = [];
+function playerAdd(playerName,btnId){
+        playerCount = playerCount + 1;
+        if(playerCount <= 5){
+            arr.push(1)
+        }
+   
+    console.log(playerCount);
+    const playerNameInner = document.getElementById(playerName).innerText;
+    
+    let addedName = document.getElementById("player-add");
+    // condition
+    const totalPlayerSselect = addedName.childElementCount;
+    if(totalPlayerSselect > 4){
+        
+        alert('5 tar besi add korte parba na')
+    }
+    else{
+        // element create
+    
+    const li = document.createElement("li");
+    li.innerText = playerNameInner;
+    addedName.appendChild(li);
+        // disable button
+    const btnDisable = document.getElementById(btnId);
+    btnDisable.style.backgroundColor = "#A2A9AF";
+    btnDisable.setAttribute("disabled",'');
+    };
+
+};
+
+// claculation function
+
+document.getElementById("calulate").addEventListener("click",function(){    
     const playerInput = document.getElementById("player-price").value;
     const playerValue = parseInt(playerInput);
-
-    const playerPrice = playerValue *5
+    
+    const playerPrice = playerValue * arr.length;
     const playerCostInner = document.getElementById('player-cost');
     playerCostInner.innerText = playerPrice;
+    playerInput.value = '';
 });
+
+// total calculation function
 
 document.getElementById("total-btn").addEventListener("click",function(){
 
@@ -18,51 +56,9 @@ document.getElementById("total-btn").addEventListener("click",function(){
     const playerCostInner = document.getElementById('player-cost').innerText;
     const playerCost = parseInt(playerCostInner);
     
-
-    
-        const totalCost = manegerValue + coachValue + playerCost;
+    const totalCost = manegerValue + coachValue + playerCost;
     const total = document.getElementById('total-cost');
     total.innerText = totalCost;
 
 })
 
-
-// player function
-
-function playerAdd(playerName,btnId){
-    const playerNameInner = document.getElementById(playerName).innerText;
-    
-    let addedName = document.getElementById("player-add");
-    
-    let areey = 0;
-    console.log(areey);
-    const totalPlayerSselect = addedName.childElementCount;
-    if(totalPlayerSselect > 4){
-        
-        alert('5 tar besi add korte parba na')
-    }
-    else{
-        
-    const li = document.createElement("li");
-    li.innerText = playerNameInner;
-    addedName.appendChild(li);
-
-    // const btnDisable = getElementById(btnId);
-    // btnDisable.style.backgroundColor = "gey";
-    // btnDisable.setAttribute("disabled",'');
-    };
-
-    
-    
-
-    // const addedNameHtml = addedName.innerHTML;
-    
-    // const a= document.getElementsByTagName();
-    // console.log(a);
-
-};
-
-// function disable(){
-//     disable = true;
-
-// }
