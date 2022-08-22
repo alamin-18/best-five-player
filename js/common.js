@@ -7,7 +7,6 @@ function playerAdd(playerName,btnId){
             arr.push(1)
         }
    
-    console.log(playerCount);
     const playerNameInner = document.getElementById(playerName).innerText;
     
     let addedName = document.getElementById("player-add");
