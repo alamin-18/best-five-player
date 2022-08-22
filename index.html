@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Five</title>
+    <title>English premier league 2022</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              
+            }
+          }
+        }
+      </script>
 </head>
 <body>
     <!-- header aria start -->
-    <header class=" bg-black heder-hight w-9/12 mx-auto flex justify-between items-center ">
+    <header class=" pb-0 bg-black heder-hight w-9/12 mx-auto flex justify-between items-center ">
         <div class=""><img class="" src="images/Group-12.png" alt=""></div>
         <div class="text-center w-2/4 ">
-            <h1 class="text-7xl text-red-400 ">Select Your Best Five</h1>
+            <h1 class="text-5xl font-bold mb-10 text-red-500 ">English premier league 2022</h1>
             <p class="text-xl text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
         <div>
@@ -126,7 +138,7 @@
                     <button id="calulate" class="bg-[#015196] px-12 py-1 font-semibold text-lg" >Calculate</button>
                     <div class="flex justify-around">
                         <h1>Player Expenses</h1>
-                        <h1>$<span id="player-cost"></span></h1>
+                        <h1>$<span id="player-cost" class="text-red-500"></span></h1>
                     </div>
                     <div class="flex justify-between items-center">
                     <p>Manager</p>
@@ -140,7 +152,7 @@
                     
                     <div class="flex justify-around">
                         <h1>Total</h1>
-                        <h1>$<span id="total-cost"></span></h1>
+                        <h1>$<span id="total-cost" class="text-red-500"></span></h1>
                     </div>
                 </div>
                 <!-- calculation ends -->

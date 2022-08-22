@@ -15,7 +15,7 @@ function playerAdd(playerName,btnId){
     const totalPlayerSselect = addedName.childElementCount;
     if(totalPlayerSselect > 4){
         
-        alert('5 tar besi add korte parba na')
+        alert('must be added 5 player ')
     }
     else{
         // element create
@@ -33,32 +33,46 @@ function playerAdd(playerName,btnId){
 
 // claculation function
 
-document.getElementById("calulate").addEventListener("click",function(){    
-    const playerInput = document.getElementById("player-price").value;
-    const playerValue = parseInt(playerInput);
+document.getElementById("calulate").addEventListener("click",function(){
+    // palyer price input value  
+    if(arr.length == 0){
+        alert("Please add Player")
+    }
+    const playerInput = document.getElementById("player-price");
+    const playerString =playerInput.value;
+    const playerValue = parseInt(playerString);
+    playerInput.value = '';
+    
+    // player Price calculation
     
     const playerPrice = playerValue * arr.length;
     const playerCostInner = document.getElementById('player-cost');
     playerCostInner.innerText = playerPrice;
-    playerInput.value = '';
+
 });
 
 // total calculation function
 
 document.getElementById("total-btn").addEventListener("click",function(){
+    // maneger price input value
+    const manegerInput = document.getElementById("maneger-input");
+    const manegerString = manegerInput.value;
+    const manegerValue = parseInt(manegerString);
+    manegerInput.value = "";
+    
+    // coach Input value
+    const coachInput = document.getElementById("coach-input");
+    const coachString = coachInput.value;
+    const coachValue = parseInt(coachString);
+    coachInput.value = "";
 
-    const manegerInput = document.getElementById("maneger-input").value;
-    const manegerValue = parseInt(manegerInput);
-
-    const coachInput = document.getElementById("coach-input").value;
-    const coachValue = parseInt(coachInput);
-
+    // total calculation
     const playerCostInner = document.getElementById('player-cost').innerText;
     const playerCost = parseInt(playerCostInner);
     
     const totalCost = manegerValue + coachValue + playerCost;
     const total = document.getElementById('total-cost');
     total.innerText = totalCost;
-
-})
+    
+});
 
